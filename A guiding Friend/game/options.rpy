@@ -12,7 +12,7 @@
 ##
 ## O _() ao redor da string a marca como elegível para tradução.
 
-define config.name = _("A guiding Friend")
+define config.name = _("A Guiding Friend")
 
 
 ## Determina se o título fornecido acima será mostrado na tela do menu
@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## A versão do jogo.
 
-define config.version = "1.0"
+define config.version = "0.0.1 - InDev"
 
 
 ## Texto que é colocado na tela "Sobre" do jogo. Coloque o texto entre aspas
@@ -37,7 +37,7 @@ define gui.about = _p("""
 ## distribuição construída. Ele deve ser somente ASCII e não deve conter
 ## espaços, dois pontos ou ponto e vírgula.
 
-define build.name = "AguidingFriend"
+define build.name = "AGuidingFriend"
 
 
 ## Sons e música ###############################################################
@@ -145,7 +145,7 @@ default preferences.afm_time = 15
 ## Isso geralmente não deve ser alterado e, se for, deve ser sempre uma string
 ## literal, não uma expressão.
 
-define config.save_directory = "AguidingFriend-1763044378"
+define config.save_directory = "AGuidingFriend-1763044378"
 
 
 ## Ícone #######################################################################

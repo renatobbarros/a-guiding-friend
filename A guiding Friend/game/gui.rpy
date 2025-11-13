@@ -9,7 +9,7 @@ init offset = -2
 ## Chamar gui.init redefine os estilos para os valores padrão sensatos e define
 ## a largura e a altura do jogo.
 init python:
-    gui.init(1920, 1080)
+    gui.init(1280, 720)
 
 ## Habilitar verificações de propriedades inválidas ou instáveis em telas ou
 ## transformações
@@ -71,22 +71,22 @@ define gui.name_text_font = "DejaVuSans.ttf"
 define gui.interface_text_font = "DejaVuSans.ttf"
 
 ## O tamanho do texto normal do diálogo.
-define gui.text_size = 33
+define gui.text_size = 24
 
 ## O tamanho dos nomes dos caracteres.
-define gui.name_text_size = 45
+define gui.name_text_size = 35
 
 ## O tamanho do texto na interface de usuário do jogo.
-define gui.interface_text_size = 33
+define gui.interface_text_size = 25
 
 ## O tamanho dos rótulos na interface de usuário do jogo.
-define gui.label_text_size = 36
+define gui.label_text_size = 30
 
 ## O tamanho do texto na tela de notificação.
 define gui.notify_text_size = 24
 
 ## O tamanho do título do jogo.
-define gui.title_text_size = 75
+define gui.title_text_size = 60
 
 
 ## Menus principal e de jogos ##################################################
@@ -112,8 +112,8 @@ define gui.textbox_yalign = 1.0
 ## O posicionamento do nome do personagem que fala, em relação à caixa de
 ## texto. Pode ser um número inteiro de pixels a partir da esquerda ou do topo,
 ## ou 0,5 para o centro.
-define gui.name_xpos = 360
-define gui.name_ypos = 0
+define gui.name_xpos = 160
+define gui.name_ypos = 25
 
 ## O alinhamento horizontal do nome do personagem. Pode ser 0,0 para alinhado à
 ## esquerda, 0,5 para centralizado e 1,0 para alinhado à direita.
@@ -136,7 +136,7 @@ define gui.namebox_tile = False
 ## O posicionamento do diálogo em relação à caixa de texto. Esse pode ser um
 ## número inteiro de pixels em relação ao lado esquerdo ou superior da caixa de
 ## texto, ou 0,5 em relação ao centro.
-define gui.dialogue_xpos = 402
+define gui.dialogue_xpos = 202
 define gui.dialogue_ypos = 75
 
 ## A largura máxima do texto da caixa de diálogo, em pixels.
