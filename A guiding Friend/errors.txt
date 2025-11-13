@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 2: invalid syntax
+    personagem_principal = input"Qual é seu nome?\n:"
+                                    ^^^^^^^^^^^^^^^^
+
+Ren'Py Version: Ren'Py 8.4.1.25072401
+Thu Nov 13 11:52:07 2025
