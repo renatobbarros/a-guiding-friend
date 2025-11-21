@@ -1,95 +1,48 @@
-﻿## Esse arquivo contém opções que podem ser alteradas para personalizar o jogo.
-##
-## As linhas que começam com duas marcas '#' são comentários e você não deve
-## descomentá-las. As linhas que começam com uma única marca '#' são códigos
-## comentados, e você pode querer descomentá-las quando apropriado.
+﻿define config.name = _("A Guiding Friend")
 
-
-## Noções básicas ##############################################################
-
-## Um nome do jogo legível por humanos. Ele é usado para definir o título
-## padrão da janela e aparece na interface e nos relatórios de erros.
-##
-## O _() ao redor da string a marca como elegível para tradução.
-
-define config.name = _("A Guiding Friend")
-
-
-## Determina se o título fornecido acima será mostrado na tela do menu
-## principal. Defina como False para ocultar o título.
 
 define gui.show_name = True
 
 
 ## A versão do jogo.
 
-define config.version = "0.0.1 - InDev"
+define config.version = "0.0.1 - in dev"
 
 
-## Texto que é colocado na tela "Sobre" do jogo. Coloque o texto entre aspas
-## triplas e deixe uma linha em branco entre os parágrafos.
 
 define gui.about = _p("""
+{b}A Guiding Friend{/b}
+Uma experiência de horror psicológico no interior de Pernambuco. Criado como avaliação da segunda V.A de Projetos interdiciplinares de sistemas da informação
+
+Criado por: {b}Isaque Lucas e Renato Barros{/b}
+Roteiro e Direção: {b}Isaque Lucas e Renato Barros{/b}
+
+Agradecimentos Especiais:
+- UFRPE
+- Professor Cleyton
+- ElevenLabs & Freesound
+
+{i}Versão 1.0 - 2025{/i}
 """)
 
-
-## Um nome curto para o jogo usado para executáveis e diretórios na
-## distribuição construída. Ele deve ser somente ASCII e não deve conter
-## espaços, dois pontos ou ponto e vírgula.
-
 define build.name = "AGuidingFriend"
-
-
-## Sons e música ###############################################################
-
-## Essas três variáveis controlam, entre outras coisas, quais mixers são
-## mostrados ao jogador por padrão. Definir uma delas como False ocultará o
-## mixer apropriado.
 
 define config.has_sound = True
 define config.has_music = True
 define config.has_voice = True
 
-
-## Para permitir que o usuário reproduza um som de teste no canal de som ou
-## voz, descomente a linha abaixo e use-a para definir um som de amostra a ser
-## reproduzido.
-
-# define config.sample_sound = "sample-sound.ogg"
-# define config.sample_voice = "sample-voice.ogg"
-
-
-## Descomente a linha a seguir para definir um arquivo de áudio que será
-## reproduzido enquanto o jogador estiver no menu principal. Esse arquivo
-## continuará sendo reproduzido no jogo até que seja interrompido ou outro
-## arquivo seja reproduzido.
-
-# define config.main_menu_music = "main-menu-theme.ogg"
-
-
-## Transições ##################################################################
-##
-## Essas variáveis definem as transições que são usadas quando determinados
-## eventos ocorrem. Cada variável deve ser definida como uma transição ou None
-## para indicar que nenhuma transição deve ser usada.
-
-## Entrar ou sair do menu do jogo.
-
+define config.main_menu_music = "sounds/music/Gathering Darkness.mp3"
 define config.enter_transition = dissolve
 define config.exit_transition = dissolve
 
 
-## Entre as telas do menu do jogo.
-
 define config.intra_transition = dissolve
 
 
-## Uma transição que é usada depois que um jogo é carregado.
 
 define config.after_load_transition = None
 
 
-## Usado ao entrar no menu principal após o término do jogo.
 
 define config.end_game_transition = None
 

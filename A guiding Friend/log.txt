@@ -1,42 +1,795 @@
-2025-11-13 17:34:14 UTC
-Windows-11-10.0.26100-SP0
-Ren'Py 8.4.1.25072401
+2025-11-21 14:20:11 UTC
+Windows-10-10.0.19045-SP0
+Ren'Py 8.5.0.25111603
 
-Early init took 35 ms
-Loading error handling took 19 ms
-Loading script took 136 ms
-Loading save slot metadata took 29 ms
+Early init took 285 ms
+Loading error handling took 215 ms
+Loading script took 8414 ms
+Loading save slot metadata took 182 ms
 Loading persistent took 0 ms
-Running init code took 44 ms
-Loading analysis data took 3 ms
-Analyze and compile ATL took 0 ms
-Reloading save slot metadata took 11 ms
-Backing up script files to 'C:\\Users\\isa\\AppData\\Roaming/RenPy/backups\\A guiding Friend':
-Dump and make backups took 34 ms
+Running init code took 485 ms
+Loading analysis data took 13 ms
+Analyze and compile ATL took 7 ms
+Reloading save slot metadata took 70 ms
+Dump and make backups took 303 ms
 Cleaning cache took 0 ms
-Making clean stores took 0 ms
-Initial gc took 32 ms
-DPI scale factor: 1.250000
+Making clean stores took 1 ms
+Initial gc took 335 ms
+DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 2 ms
+Creating interface object took 40 ms
 Init translation took 0 ms
-Cleaning stores took 0 ms
-Load screen analysis took 0 ms
-Analyze screens took 6 ms
-Save screen analysis took 9 ms
+Cleaning stores took 1 ms
+Load screen analysis took 155 ms
+Analyze screens took 2 ms
+Save screen analysis took 1 ms
 Save pyanalysis took 0 ms
-Save bytecode took 19 ms
-Running _start took 0 ms
-Interface start took 236 ms
+Save bytecode took 0 ms
+Running _start took 2 ms
+Interface start took 2126 ms
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
+primary display bounds: (0, 0, 1366, 768)
 swap interval: 1 frames
 Windowed mode.
 Vendor: 'Intel'
-Renderer: 'Intel(R) Iris(R) Xe Graphics'
-Version: '4.6.0 - Build 32.0.101.5768'
-Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
-Screen sizes: virtual=(1280, 720) physical=(1600, 900) drawable=(1600, 900)
+Renderer: 'Intel(R) HD Graphics 620'
+Version: '4.6.0 - Build 27.20.100.8682'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1280, 720) physical=(1366, 705) drawable=(1366, 705)
 Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Cleaning stores took 47 ms
+Load screen analysis took 4282 ms
+Analyze screens took 1 ms
+Running _start took 214 ms
+
+
+      0       0       0       0 start frame
+
+      0       0       0       0 start idle_frame (expensive)
+
+      0       0       0       0 end idle_frame (expensive)
+
+      0       0       0       0 pre wait
+
+  47002   47002       0       0 post wait <Event(32769-UserEvent1 code=0, mod=4096)>
+
+  47002       0       0       0 start of interact while loop
+
+  47002       0       0       0 start idle_frame (expensive)
+
+  47002       0       0       0 end idle_frame (expensive)
+
+  47002       0       0       0 pre wait
+
+  97075   50072       0       0 post wait <Event(32769-UserEvent1 code=0, mod=4096)>
+
+  97075       0       0       0 start of interact while loop
+
+  97075       0       0       0 start idle_frame (expensive)
+
+  97075       0       0       0 end idle_frame (expensive)
+
+  97075       0       0       0 pre wait
+
+ 119018   21943       0       0 post wait <Event(1026-MOUSEBUTTONUP button=1, mod=4096, pos=(730, 398), touch=False, which=0)>
+
+ 119018       0       0       0 start mouse focus handling
+
+ 119018       0       0       0 start event handling
+
+ 119018       0       0       0 finish event handling
+
+ 119018       0       0       0 end interact_core
+
+ 119018       0       0       0 before with none
+
+ 119018       0       0       0 start of with none
+
+ 119018       0       0       0 empty window
+
+ 120016     999       0       0 after with none
+
+ 120016       0       0       0     after execute TranslateSay (game/script.rpy:157)
+
+ 120016       0       0       0     end TranslateSay (game/script.rpy:157)
+
+ 120016       0       0       0 --- start Return (game/script.rpy:158)
+
+ 120016       0       0       0     before execute Return (game/script.rpy:158)
+
+ 291924  171907  171907       0     after execute Return (game/script.rpy:158)
+
+ 291924  171907       0       0     end Return (game/script.rpy:158)
+
+ 9741601  9621584       0       0 --- start Label (renpy/common/00start.rpy:205)
+
+ 9742606    1006    1006       0     before execute Label (renpy/common/00start.rpy:205)
+
+ 9742606    1006       0       0     after execute Label (renpy/common/00start.rpy:205)
+
+ 9742606    1006       0       0     end Label (renpy/common/00start.rpy:205)
+
+ 9742606    1006       0       0 --- start If (renpy/common/00start.rpy:207)
+
+ 9742606       0       0       0     before execute If (renpy/common/00start.rpy:207)
+
+ 9742606       0       0       0     after execute If (renpy/common/00start.rpy:207)
+
+ 9742606       0       0       0     end If (renpy/common/00start.rpy:207)
+
+ 9742606       0       0       0 --- start Python (renpy/common/00start.rpy:210)
+
+ 9742606       0       0       0     before execute Python (renpy/common/00start.rpy:210)
+
+ 9743599     993     993       0     after execute Python (renpy/common/00start.rpy:210)
+
+ 9743599     993       0       0     end Python (renpy/common/00start.rpy:210)
+
+ 9743599     993       0       0 --- start If (renpy/common/00start.rpy:213)
+
+ 9743599       0       0       0     before execute If (renpy/common/00start.rpy:213)
+
+ 9744596     997     997       0     after execute If (renpy/common/00start.rpy:213)
+
+ 9744596     997       0       0     end If (renpy/common/00start.rpy:213)
+
+ 9744596     997       0       0 --- start Call (renpy/common/00start.rpy:214)
+
+ 9744596       0       0       0     before execute Call (renpy/common/00start.rpy:214)
+
+ 9744596       0       0       0     after execute Call (renpy/common/00start.rpy:214)
+
+ 9744596       0       0       0     end Call (renpy/common/00start.rpy:214)
+
+ 9744596       0       0       0 --- start Label (renpy/common/00start.rpy:163)
+
+ 9744596       0       0       0     before execute Label (renpy/common/00start.rpy:163)
+
+ 9744596       0       0       0     after execute Label (renpy/common/00start.rpy:163)
+
+ 9744596       0       0       0     end Label (renpy/common/00start.rpy:163)
+
+ 9744596       0       0       0 --- start Python (renpy/common/00start.rpy:165)
+
+ 9744596       0       0       0     before execute Python (renpy/common/00start.rpy:165)
+
+ 9744596       0       0       0     after execute Python (renpy/common/00start.rpy:165)
+
+ 9744596       0       0       0     end Python (renpy/common/00start.rpy:165)
+
+ 9744596       0       0       0 --- start Return (renpy/common/00start.rpy:173)
+
+ 9744596       0       0       0     before execute Return (renpy/common/00start.rpy:173)
+
+ 9744596       0       0       0     after execute Return (renpy/common/00start.rpy:173)
+
+ 9744596       0       0       0     end Return (renpy/common/00start.rpy:173)
+
+ 9744596       0       0       0 --- start Pass (renpy/common/00start.rpy:214)
+
+ 9744596       0       0       0     before execute Pass (renpy/common/00start.rpy:214)
+
+ 9744596       0       0       0     after execute Pass (renpy/common/00start.rpy:214)
+
+ 9744596       0       0       0     end Pass (renpy/common/00start.rpy:214)
+
+ 9744596       0       0       0 --- start Python (renpy/common/00start.rpy:216)
+
+ 9744596       0       0       0     before execute Python (renpy/common/00start.rpy:216)
+
+ 9752717    8121    8121       0     after execute Python (renpy/common/00start.rpy:216)
+
+ 9752717    8121       0       0     end Python (renpy/common/00start.rpy:216)
+
+ 9752717    8121       0       0 --- start Scene (renpy/common/00start.rpy:226)
+
+ 9753721    1004    1004       0     before execute Scene (renpy/common/00start.rpy:226)
+
+ 9753721    1004       0       0     after execute Scene (renpy/common/00start.rpy:226)
+
+ 9753721    1004       0       0     end Scene (renpy/common/00start.rpy:226)
+
+ 9753721    1004       0       0 --- start If (renpy/common/00start.rpy:228)
+
+ 9753721       0       0       0     before execute If (renpy/common/00start.rpy:228)
+
+ 9753721       0       0       0     after execute If (renpy/common/00start.rpy:228)
+
+ 9753721       0       0       0     end If (renpy/common/00start.rpy:228)
+
+ 9753721       0       0       0 --- start Python (renpy/common/00start.rpy:231)
+
+ 9753721       0       0       0     before execute Python (renpy/common/00start.rpy:231)
+
+ 9756977    3256    3256       0     after execute Python (renpy/common/00start.rpy:231)
+
+ 9756977    3256       0       0     end Python (renpy/common/00start.rpy:231)
+
+ 9756977    3256       0       0 --- start Call (renpy/common/00start.rpy:234)
+
+ 9756977       0       0       0     before execute Call (renpy/common/00start.rpy:234)
+
+ 9756977       0       0       0     after execute Call (renpy/common/00start.rpy:234)
+
+ 9756977       0       0       0     end Call (renpy/common/00start.rpy:234)
+
+ 9756977       0       0       0 --- start Label (renpy/common/00keymap.rpy:542)
+
+ 9756977       0       0       0     before execute Label (renpy/common/00keymap.rpy:542)
+
+ 9756977       0       0       0     after execute Label (renpy/common/00keymap.rpy:542)
+
+ 9756977       0       0       0     end Label (renpy/common/00keymap.rpy:542)
+
+ 9756977       0       0       0 --- start If (renpy/common/00keymap.rpy:544)
+
+ 9756977       0       0       0     before execute If (renpy/common/00keymap.rpy:544)
+
+ 9756977       0       0       0     after execute If (renpy/common/00keymap.rpy:544)
+
+ 9756977       0       0       0     end If (renpy/common/00keymap.rpy:544)
+
+ 9756977       0       0       0 --- start Return (renpy/common/00keymap.rpy:545)
+
+ 9756977       0       0       0     before execute Return (renpy/common/00keymap.rpy:545)
+
+ 9756977       0       0       0     after execute Return (renpy/common/00keymap.rpy:545)
+
+ 9756977       0       0       0     end Return (renpy/common/00keymap.rpy:545)
+
+ 9756977       0       0       0 --- start Label (renpy/common/00start.rpy:234)
+
+ 9756977       0       0       0     before execute Label (renpy/common/00start.rpy:234)
+
+ 9756977       0       0       0     after execute Label (renpy/common/00start.rpy:234)
+
+ 9756977       0       0       0     end Label (renpy/common/00start.rpy:234)
+
+ 9756977       0       0       0 --- start Pass (renpy/common/00start.rpy:234)
+
+ 9756977       0       0       0     before execute Pass (renpy/common/00start.rpy:234)
+
+ 9756977       0       0       0     after execute Pass (renpy/common/00start.rpy:234)
+
+ 9756977       0       0       0     end Pass (renpy/common/00start.rpy:234)
+
+ 9756977       0       0       0 --- start Python (renpy/common/00start.rpy:236)
+
+ 9756977       0       0       0     before execute Python (renpy/common/00start.rpy:236)
+
+ 9757978    1002    1002       0     after execute Python (renpy/common/00start.rpy:236)
+
+ 9757978    1002       0       0     end Python (renpy/common/00start.rpy:236)
+
+ 9757978    1002       0       0 --- start If (renpy/common/00start.rpy:241)
+
+ 9757978       0       0       0     before execute If (renpy/common/00start.rpy:241)
+
+ 9757978       0       0       0     after execute If (renpy/common/00start.rpy:241)
+
+ 9757978       0       0       0     end If (renpy/common/00start.rpy:241)
+
+ 9757978       0       0       0 --- start If (renpy/common/00start.rpy:244)
+
+ 9757978       0       0       0     before execute If (renpy/common/00start.rpy:244)
+
+ 9757978       0       0       0     after execute If (renpy/common/00start.rpy:244)
+
+ 9757978       0       0       0     end If (renpy/common/00start.rpy:244)
+
+ 9757978       0       0       0 --- start Python (renpy/common/00start.rpy:247)
+
+ 9757978       0       0       0     before execute Python (renpy/common/00start.rpy:247)
+
+ 9757978       0       0       0     after execute Python (renpy/common/00start.rpy:247)
+
+ 9757978       0       0       0     end Python (renpy/common/00start.rpy:247)
+
+ 9757978       0       0       0 --- start Python (renpy/common/00start.rpy:249)
+
+ 9757978       0       0       0     before execute Python (renpy/common/00start.rpy:249)
+
+ 9757978       0       0       0     after execute Python (renpy/common/00start.rpy:249)
+
+ 9757978       0       0       0     end Python (renpy/common/00start.rpy:249)
+
+ 9757978       0       0       0 --- start Python (renpy/common/00start.rpy:250)
+
+ 9757978       0       0       0     before execute Python (renpy/common/00start.rpy:250)
+
+ 9757978       0       0       0     after execute Python (renpy/common/00start.rpy:250)
+
+ 9757978       0       0       0     end Python (renpy/common/00start.rpy:250)
+
+ 9757978       0       0       0 --- start Python (renpy/common/00start.rpy:251)
+
+ 9757978       0       0       0     before execute Python (renpy/common/00start.rpy:251)
+
+ 9757978       0       0       0     after execute Python (renpy/common/00start.rpy:251)
+
+ 9757978       0       0       0     end Python (renpy/common/00start.rpy:251)
+
+ 9757978       0       0       0 --- start Python (renpy/common/00start.rpy:252)
+
+ 9757978       0       0       0     before execute Python (renpy/common/00start.rpy:252)
+
+ 9757978       0       0       0     after execute Python (renpy/common/00start.rpy:252)
+
+ 9757978       0       0       0     end Python (renpy/common/00start.rpy:252)
+
+ 9757978       0       0       0 --- start Python (renpy/common/00start.rpy:254)
+
+ 9757978       0       0       0     before execute Python (renpy/common/00start.rpy:254)
+
+ 9757978       0       0       0     after execute Python (renpy/common/00start.rpy:254)
+
+ 9757978       0       0       0     end Python (renpy/common/00start.rpy:254)
+
+ 9757978       0       0       0 --- start If (renpy/common/00start.rpy:258)
+
+ 9757978       0       0       0     before execute If (renpy/common/00start.rpy:258)
+
+ 9759973    1995    1995       0     after execute If (renpy/common/00start.rpy:258)
+
+ 9759973    1995       0       0     end If (renpy/common/00start.rpy:258)
+
+ 9759973    1995       0       0 --- start Python (renpy/common/00start.rpy:261)
+
+ 9759973       0       0       0     before execute Python (renpy/common/00start.rpy:261)
+
+ 9759973       0       0       0     after execute Python (renpy/common/00start.rpy:261)
+
+ 9759973       0       0       0     end Python (renpy/common/00start.rpy:261)
+
+ 9759973       0       0       0 --- start Python (renpy/common/00start.rpy:262)
+
+ 9759973       0       0       0     before execute Python (renpy/common/00start.rpy:262)
+
+ 9759973       0       0       0     after execute Python (renpy/common/00start.rpy:262)
+
+ 9759973       0       0       0     end Python (renpy/common/00start.rpy:262)
+
+ 9759973       0       0       0 --- start Python (renpy/common/00start.rpy:263)
+
+ 9759973       0       0       0     before execute Python (renpy/common/00start.rpy:263)
+
+ 9759973       0       0       0     after execute Python (renpy/common/00start.rpy:263)
+
+ 9759973       0       0       0     end Python (renpy/common/00start.rpy:263)
+
+ 9759973       0       0       0 --- start Python (renpy/common/00start.rpy:264)
+
+ 9759973       0       0       0     before execute Python (renpy/common/00start.rpy:264)
+
+ 9759973       0       0       0     after execute Python (renpy/common/00start.rpy:264)
+
+ 9759973       0       0       0     end Python (renpy/common/00start.rpy:264)
+
+ 9759973       0       0       0 --- start Python (renpy/common/00start.rpy:266)
+
+ 9759973       0       0       0     before execute Python (renpy/common/00start.rpy:266)
+
+ 9759973       0       0       0     after execute Python (renpy/common/00start.rpy:266)
+
+ 9759973       0       0       0     end Python (renpy/common/00start.rpy:266)
+
+ 9759973       0       0       0 --- start If (renpy/common/00start.rpy:268)
+
+ 9760971     998     998       0     before execute If (renpy/common/00start.rpy:268)
+
+ 9760971     998       0       0     after execute If (renpy/common/00start.rpy:268)
+
+ 9760971     998       0       0     end If (renpy/common/00start.rpy:268)
+
+ 9760971     998       0       0 --- start Python (renpy/common/00start.rpy:269)
+
+ 9760971       0       0       0     before execute Python (renpy/common/00start.rpy:269)
+
+ 9760971       0       0       0     after execute Python (renpy/common/00start.rpy:269)
+
+ 9760971       0       0       0     end Python (renpy/common/00start.rpy:269)
+
+ 9760971       0       0       0 --- start Scene (renpy/common/00start.rpy:273)
+
+ 9760971       0       0       0     before execute Scene (renpy/common/00start.rpy:273)
+
+ 9760971       0       0       0     after execute Scene (renpy/common/00start.rpy:273)
+
+ 9760971       0       0       0     end Scene (renpy/common/00start.rpy:273)
+
+ 9760971       0       0       0 --- start Python (renpy/common/00start.rpy:275)
+
+ 9760971       0       0       0     before execute Python (renpy/common/00start.rpy:275)
+
+ 9761970     999     999       0     after execute Python (renpy/common/00start.rpy:275)
+
+ 9761970     999       0       0     end Python (renpy/common/00start.rpy:275)
+
+ 9761970     999       0       0 --- start Python (renpy/common/00start.rpy:285)
+
+ 9761970       0       0       0     before execute Python (renpy/common/00start.rpy:285)
+
+ 9763962    1992    1992       0     end Python (renpy/common/00start.rpy:285)
+
+ 9763962    1992       0       0 --- start Label (renpy/common/00start.rpy:294)
+
+ 9763962       0       0       0     before execute Label (renpy/common/00start.rpy:294)
+
+ 9763962       0       0       0     after execute Label (renpy/common/00start.rpy:294)
+
+ 9763962       0       0       0     end Label (renpy/common/00start.rpy:294)
+
+ 9763962       0       0       0 --- start Python (renpy/common/00start.rpy:297)
+
+ 9763962       0       0       0     before execute Python (renpy/common/00start.rpy:297)
+
+ 9763962       0       0       0 --- start Label (renpy/common/00start.rpy:312)
+
+ 9763962       0       0       0     before execute Label (renpy/common/00start.rpy:312)
+
+ 9765959    1997    1997       0     after execute Label (renpy/common/00start.rpy:312)
+
+ 9765959    1997       0       0     end Label (renpy/common/00start.rpy:312)
+
+ 9765959    1997       0       0 --- start Python (renpy/common/00start.rpy:314)
+
+ 9765959       0       0       0     before execute Python (renpy/common/00start.rpy:314)
+
+ 9766956     997       0       0 start draw_screen
+
+ 9907269  140313  140313       0     after execute Python (renpy/common/00start.rpy:314)
+
+ 9907269  140313       0       0     end Python (renpy/common/00start.rpy:314)
+
+ 9907269  140313       0       0 --- start Jump (renpy/common/00start.rpy:324)
+
+ 9907269       0       0       0     before execute Jump (renpy/common/00start.rpy:324)
+
+ 9907269       0       0       0     after execute Jump (renpy/common/00start.rpy:324)
+
+ 9907269       0       0       0     end Jump (renpy/common/00start.rpy:324)
+
+ 9907269       0       0       0 --- start Label (renpy/common/00start.rpy:327)
+
+ 9907269       0       0       0     before execute Label (renpy/common/00start.rpy:327)
+
+ 9907269       0       0       0     after execute Label (renpy/common/00start.rpy:327)
+
+ 9907269       0       0       0     end Label (renpy/common/00start.rpy:327)
+
+ 9907269       0       0       0 --- start If (renpy/common/00start.rpy:331)
+
+ 9907269       0       0       0     before execute If (renpy/common/00start.rpy:331)
+
+ 9908283    1014    1014       0     after execute If (renpy/common/00start.rpy:331)
+
+ 9908283    1014       0       0     end If (renpy/common/00start.rpy:331)
+
+ 9908283    1014       0       0 --- start If (renpy/common/00start.rpy:336)
+
+ 9908283       0       0       0     before execute If (renpy/common/00start.rpy:336)
+
+ 9908283       0       0       0     after execute If (renpy/common/00start.rpy:336)
+
+ 9908283       0       0       0     end If (renpy/common/00start.rpy:336)
+
+ 9908283       0       0       0 --- start Jump (renpy/common/00start.rpy:341)
+
+ 9908283       0       0       0     before execute Jump (renpy/common/00start.rpy:341)
+
+ 9908283       0       0       0     after execute Jump (renpy/common/00start.rpy:341)
+
+ 9908283       0       0       0     end Jump (renpy/common/00start.rpy:341)
+
+ 9908283       0       0       0 --- start Label (renpy/common/_layout/screen_main_menu.rpym:26)
+
+ 9908283       0       0       0     before execute Label (renpy/common/_layout/screen_main_menu.rpym:26)
+
+ 9908283       0       0       0     after execute Label (renpy/common/_layout/screen_main_menu.rpym:26)
+
+ 9908283       0       0       0     end Label (renpy/common/_layout/screen_main_menu.rpym:26)
+
+ 9908283       0       0       0 --- start Python (renpy/common/_layout/screen_main_menu.rpym:28)
+
+ 9908283       0       0       0     before execute Python (renpy/common/_layout/screen_main_menu.rpym:28)
+
+ 9909263     980       0       0 start of new interaction
+
+ 9909263       0       0       0 start interact_core
+
+ 10037348  128085       0       0 computed scene
+
+ 10037348       0       0       0 final predict
+
+ 10064273   26925       0       0 start of interact while loop
+
+ 10064273       0       0       0 start render <renpy.display.layout.Fixed object at 0x0000000008be4aa0>
+
+ 10064273       0       0       0 start render <renpy.display.behavior.Keymap object at 0x00000000088908c0>
+
+ 10064273       0       0       0 end render <renpy.display.behavior.Keymap object at 0x00000000088908c0>
+
+ 10064273       0       0       0 start render <renpy.display.layout.Tile object at 0x0000000008912ea0>
+
+ 10064273       0       0       0 start render <renpy.display.im.Image object ('_transparent_tile.png') at 0x0000000008912e70>
+
+ 10064273       0       0       0 end render <renpy.display.im.Image object ('_transparent_tile.png') at 0x0000000008912e70>
+
+ 10064273       0       0       0 end render <renpy.display.layout.Tile object at 0x0000000008912ea0>
+
+ 10064273       0       0       0 start render <renpy.display.behavior.Keymap object at 0x0000000008912cc0>
+
+ 10064273       0       0       0 end render <renpy.display.behavior.Keymap object at 0x0000000008912cc0>
+
+ 10064273       0       0       0 start render <renpy.display.layout.Fixed object at 0x0000000008be45c0>
+
+ 10064273       0       0       0 end render <renpy.display.layout.Fixed object at 0x0000000008be45c0>
+
+ 10064273       0       0       0 start render <renpy.display.layout.Fixed object at 0x0000000008a71820>
+
+ 10064273       0       0       0 start render <renpy.display.layout.Fixed object at 0x0000000008be5e80>
+
+ 10064273       0       0       0 start render <renpy.display.transform.Transform object (<renpy.display.image.ImageReference object ('black',) at 0x00000000048b9af0>) at 0x0000000008c82f00>
+
+ 10064273       0       0       0 start render <renpy.display.image.ImageReference object ('black',) at 0x00000000048b9af0>
+
+ 10064273       0       0       0 start render <renpy.display.imagelike.Solid object at 0x000000000805d1f0>
+
+ 10072676    8403    8403       0 end render <renpy.display.imagelike.Solid object at 0x000000000805d1f0>
+
+ 10072676    8403       0       0 end render <renpy.display.image.ImageReference object ('black',) at 0x00000000048b9af0>
+
+ 10072676    8403       0       0 end render <renpy.display.transform.Transform object (<renpy.display.image.ImageReference object ('black',) at 0x00000000048b9af0>) at 0x0000000008c82f00>
+
+ 10073534    9261     858       0 end render <renpy.display.layout.Fixed object at 0x0000000008be5e80>
+
+ 10073534    9261       0       0 start render <renpy.display.layout.Fixed object at 0x0000000008be70b0>
+
+ 10073534    9261       0       0 end render <renpy.display.layout.Fixed object at 0x0000000008be70b0>
+
+ 10073534    9261       0       0 start render <renpy.display.layout.Fixed object at 0x0000000008be47a0>
+
+ 10073534    9261       0       0 start render <renpy.display.screen.ScreenDisplayable object (main_menu()) at 0x00000000066f6d20>
+
+ 10073534    9261       0       0 start render <renpy.display.layout.Fixed object at 0x0000000008be4590>
+
+ 10073534    9261       0       0 start render <renpy.display.im.Image object ('images/menu_bg.png') at 0x0000000008c9c3b0>
+
+ 10073534    9261       0       0 end render <renpy.display.im.Image object ('images/menu_bg.png') at 0x0000000008c9c3b0>
+
+ 10073534    9261       0       0 start render <renpy.display.layout.Window object at 0x0000000008c9d820>
+
+ 10073534    9261       0       0 start render <renpy.display.layout.Fixed object at 0x0000000008c9c860>
+
+ 10073534    9261       0       0 end render <renpy.display.layout.Fixed object at 0x0000000008c9c860>
+
+ 10073534    9261       0       0 start render <renpy.display.im.Image object ('gui/overlay/main_menu.png') at 0x0000000008c657f0>
+
+ 10073534    9261       0       0 end render <renpy.display.im.Image object ('gui/overlay/main_menu.png') at 0x0000000008c657f0>
+
+ 10073534    9261       0       0 end render <renpy.display.layout.Window object at 0x0000000008c9d820>
+
+ 10073534    9261       0       0 start render <renpy.display.layout.VBox object at 0x0000000008c9eab0>
+
+ 10073534    9261       0       0 start render <renpy.display.behavior.Button object at 0x0000000008a73680>
+
+ 10073534    9261       0       0 start render <renpy.display.behavior.Button object at 0x0000000008a73680>
+
+ 10073534    9261       0       0 start render <renpy.text.text.Text object ('Início') at 0x0000000008c9d5e0>
+
+ 10086243   21970   12709       0 end render <renpy.text.text.Text object ('Início') at 0x0000000008c9d5e0>
+
+ 10086243   21970       0       0 start render <Frame <renpy.display.image.DynamicImage object (['gui/button/navigation_[prefix_]background.png', 'gui/button/[prefix_]background.png']) at 0x0000000008c65820> (6,6,6,6)>
+
+ 10086243   21970       0       0 start render <renpy.display.image.DynamicImage object (['gui/button/navigation_[prefix_]background.png', 'gui/button/[prefix_]background.png']) at 0x0000000008c65820>
+
+ 10086243   21970       0       0 start render <renpy.display.im.Image object ('gui/button/idle_background.png') at 0x0000000008c9d5b0>
+
+ 10086243   21970       0       0 end render <renpy.display.im.Image object ('gui/button/idle_background.png') at 0x0000000008c9d5b0>
+
+ 10086243   21970       0       0 end render <renpy.display.image.DynamicImage object (['gui/button/navigation_[prefix_]background.png', 'gui/button/[prefix_]background.png']) at 0x0000000008c65820>
+
+ 10086243   21970       0       0 end render <Frame <renpy.display.image.DynamicImage object (['gui/button/navigation_[prefix_]background.png', 'gui/button/[prefix_]background.png']) at 0x0000000008c65820> (6,6,6,6)>
+
+ 10086243   21970       0       0 end render <renpy.display.behavior.Button object at 0x0000000008a73680>
+
+ 10086243   21970       0       0 start render <renpy.display.behavior.Button object at 0x0000000008c9c140>
+
+ 10086243   21970       0       0 start render <renpy.text.text.Text object ('Carga') at 0x0000000008c9c4a0>
+
+ 10089236   24962    2993       0 end render <renpy.text.text.Text object ('Carga') at 0x0000000008c9c4a0>
+
+ 10089236   24962       0       0 start render <Frame <renpy.display.image.DynamicImage object (['gui/button/navigation_[prefix_]background.png', 'gui/button/[prefix_]background.png']) at 0x0000000008c65820> (6,6,6,6)>
+
+ 10089236   24962       0       0 start render <renpy.display.image.DynamicImage object (['gui/button/navigation_[prefix_]background.png', 'gui/button/[prefix_]background.png']) at 0x0000000008c65820>
+
+ 10089236   24962       0       0 start render <renpy.display.im.Image object ('gui/button/idle_background.png') at 0x0000000008c9d5b0>
+
+ 10089236   24962       0       0 end render <renpy.display.im.Image object ('gui/button/idle_background.png') at 0x0000000008c9d5b0>
+
+ 10089236   24962       0       0 end render <renpy.display.image.DynamicImage object (['gui/button/navigation_[prefix_]background.png', 'gui/button/[prefix_]background.png']) at 0x0000000008c65820>
+
+ 10090248   25974    1012       0 end render <Frame <renpy.display.image.DynamicImage object (['gui/button/navigation_[prefix_]background.png', 'gui/button/[prefix_]background.png']) at 0x0000000008c65820> (6,6,6,6)>
+
+ 10090248   25974       0       0 end render <renpy.display.behavior.Button object at 0x0000000008c9c140>
+
+ 10090248   25974       0       0 start render <renpy.display.behavior.Button object at 0x0000000008c9dc70>
+
+ 10090248   25974       0       0 start render <renpy.text.text.Text object ('Preferências') at 0x0000000008c9d850>
+
+ 10091230   26957     983       0 end render <renpy.text.text.Text object ('Preferências') at 0x0000000008c9d850>
+
+ 10091230   26957       0       0 start render <Frame <renpy.display.image.DynamicImage object (['gui/button/navigation_[prefix_]background.png', 'gui/button/[prefix_]background.png']) at 0x0000000008c65820> (6,6,6,6)>
+
+ 10091230   26957       0       0 start render <renpy.display.image.DynamicImage object (['gui/button/navigation_[prefix_]background.png', 'gui/button/[prefix_]background.png']) at 0x0000000008c65820>
+
+ 10091230   26957       0       0 start render <renpy.display.im.Image object ('gui/button/idle_background.png') at 0x0000000008c9d5b0>
+
+ 10091230   26957       0       0 end render <renpy.display.im.Image object ('gui/button/idle_background.png') at 0x0000000008c9d5b0>
+
+ 10091230   26957       0       0 end render <renpy.display.image.DynamicImage object (['gui/button/navigation_[prefix_]background.png', 'gui/button/[prefix_]background.png']) at 0x0000000008c65820>
+
+ 10092227   27954     997       0 end render <Frame <renpy.display.image.DynamicImage object (['gui/button/navigation_[prefix_]background.png', 'gui/button/[prefix_]background.png']) at 0x0000000008c65820> (6,6,6,6)>
+
+ 10092227   27954       0       0 end render <renpy.display.behavior.Button object at 0x0000000008c9dc70>
+
+ 10092227   27954       0       0 start render <renpy.display.behavior.Button object at 0x0000000008c9cdd0>
+
+ 10092227   27954       0       0 start render <renpy.text.text.Text object ('Sobre') at 0x0000000008c9d250>
+
+ 10092227   27954       0       0 end render <renpy.text.text.Text object ('Sobre') at 0x0000000008c9d250>
+
+ 10092227   27954       0       0 start render <Frame <renpy.display.image.DynamicImage object (['gui/button/navigation_[prefix_]background.png', 'gui/button/[prefix_]background.png']) at 0x0000000008c65820> (6,6,6,6)>
+
+ 10092227   27954       0       0 start render <renpy.display.image.DynamicImage object (['gui/button/navigation_[prefix_]background.png', 'gui/button/[prefix_]background.png']) at 0x0000000008c65820>
+
+ 10092227   27954       0       0 start render <renpy.display.im.Image object ('gui/button/idle_background.png') at 0x0000000008c9d5b0>
+
+ 10093225   28952     998       0 end render <renpy.display.im.Image object ('gui/button/idle_background.png') at 0x0000000008c9d5b0>
+
+ 10093225   28952       0       0 end render <renpy.display.image.DynamicImage object (['gui/button/navigation_[prefix_]background.png', 'gui/button/[prefix_]background.png']) at 0x0000000008c65820>
+
+ 10093225   28952       0       0 end render <Frame <renpy.display.image.DynamicImage object (['gui/button/navigation_[prefix_]background.png', 'gui/button/[prefix_]background.png']) at 0x0000000008c65820> (6,6,6,6)>
+
+ 10093225   28952       0       0 end render <renpy.display.behavior.Button object at 0x0000000008c9cdd0>
+
+ 10093225   28952       0       0 start render <renpy.display.behavior.Button object at 0x0000000008c9ddc0>
+
+ 10093225   28952       0       0 start render <renpy.text.text.Text object ('Ajuda') at 0x0000000008c9f6b0>
+
+ 10093225   28952       0       0 end render <renpy.text.text.Text object ('Ajuda') at 0x0000000008c9f6b0>
+
+ 10093225   28952       0       0 start render <Frame <renpy.display.image.DynamicImage object (['gui/button/navigation_[prefix_]background.png', 'gui/button/[prefix_]background.png']) at 0x0000000008c65820> (6,6,6,6)>
+
+ 10093225   28952       0       0 start render <renpy.display.image.DynamicImage object (['gui/button/navigation_[prefix_]background.png', 'gui/button/[prefix_]background.png']) at 0x0000000008c65820>
+
+ 10093225   28952       0       0 start render <renpy.display.im.Image object ('gui/button/idle_background.png') at 0x0000000008c9d5b0>
+
+ 10093225   28952       0       0 end render <renpy.display.im.Image object ('gui/button/idle_background.png') at 0x0000000008c9d5b0>
+
+ 10093225   28952       0       0 end render <renpy.display.image.DynamicImage object (['gui/button/navigation_[prefix_]background.png', 'gui/button/[prefix_]background.png']) at 0x0000000008c65820>
+
+ 10097214   32940    3989       0 end render <Frame <renpy.display.image.DynamicImage object (['gui/button/navigation_[prefix_]background.png', 'gui/button/[prefix_]background.png']) at 0x0000000008c65820> (6,6,6,6)>
+
+ 10097214   32940       0       0 end render <renpy.display.behavior.Button object at 0x0000000008c9ddc0>
+
+ 10097214   32940       0       0 start render <renpy.display.behavior.Button object at 0x0000000008c9cf80>
+
+ 10097214   32940       0       0 start render <renpy.text.text.Text object ('Sair') at 0x0000000008c9e630>
+
+ 10098213   33940     999       0 end render <renpy.text.text.Text object ('Sair') at 0x0000000008c9e630>
+
+ 10098213   33940       0       0 start render <Frame <renpy.display.image.DynamicImage object (['gui/button/navigation_[prefix_]background.png', 'gui/button/[prefix_]background.png']) at 0x0000000008c65820> (6,6,6,6)>
+
+ 10098213   33940       0       0 start render <renpy.display.image.DynamicImage object (['gui/button/navigation_[prefix_]background.png', 'gui/button/[prefix_]background.png']) at 0x0000000008c65820>
+
+ 10098213   33940       0       0 start render <renpy.display.im.Image object ('gui/button/idle_background.png') at 0x0000000008c9d5b0>
+
+ 10098213   33940       0       0 end render <renpy.display.im.Image object ('gui/button/idle_background.png') at 0x0000000008c9d5b0>
+
+ 10098213   33940       0       0 end render <renpy.display.image.DynamicImage object (['gui/button/navigation_[prefix_]background.png', 'gui/button/[prefix_]background.png']) at 0x0000000008c65820>
+
+ 10099210   34936     997       0 end render <Frame <renpy.display.image.DynamicImage object (['gui/button/navigation_[prefix_]background.png', 'gui/button/[prefix_]background.png']) at 0x0000000008c65820> (6,6,6,6)>
+
+ 10099210   34936       0       0 end render <renpy.display.behavior.Button object at 0x0000000008c9cf80>
+
+ 10099210   34936       0       0 start render <renpy.text.text.Text object ('Início') at 0x0000000008c9d5e0>
+
+ 10099210   34936       0       0 end render <renpy.text.text.Text object ('Início') at 0x0000000008c9d5e0>
+
+ 10099210   34936       0       0 start render <Frame <renpy.display.image.DynamicImage object (['gui/button/navigation_[prefix_]background.png', 'gui/button/[prefix_]background.png']) at 0x0000000008c65820> (6,6,6,6)>
+
+ 10099210   34936       0       0 start render <renpy.display.image.DynamicImage object (['gui/button/navigation_[prefix_]background.png', 'gui/button/[prefix_]background.png']) at 0x0000000008c65820>
+
+ 10099210   34936       0       0 start render <renpy.display.im.Image object ('gui/button/idle_background.png') at 0x0000000008c9d5b0>
+
+ 10099210   34936       0       0 end render <renpy.display.im.Image object ('gui/button/idle_background.png') at 0x0000000008c9d5b0>
+
+ 10099210   34936       0       0 end render <renpy.display.image.DynamicImage object (['gui/button/navigation_[prefix_]background.png', 'gui/button/[prefix_]background.png']) at 0x0000000008c65820>
+
+ 10099210   34936       0       0 end render <Frame <renpy.display.image.DynamicImage object (['gui/button/navigation_[prefix_]background.png', 'gui/button/[prefix_]background.png']) at 0x0000000008c65820> (6,6,6,6)>
+
+ 10099210   34936       0       0 end render <renpy.display.behavior.Button object at 0x0000000008a73680>
+
+ 10099210   34936       0       0 start render <renpy.display.behavior.Button object at 0x0000000008c9c140>
+
+ 10100212   35938    1002       0 start render <renpy.text.text.Text object ('Carga') at 0x0000000008c9c4a0>
+
+ 10100212   35938       0       0 end render <renpy.text.text.Text object ('Carga') at 0x0000000008c9c4a0>
+
+ 10100212   35938       0       0 end render <renpy.display.behavior.Button object at 0x0000000008c9c140>
+
+ 10100212   35938       0       0 start render <renpy.display.behavior.Button object at 0x0000000008c9dc70>
+
+ 10100212   35938       0       0 start render <renpy.text.text.Text object ('Preferências') at 0x0000000008c9d850>
+
+ 10101203   36930     991       0 end render <renpy.text.text.Text object ('Preferências') at 0x0000000008c9d850>
+
+ 10101203   36930       0       0 end render <renpy.display.behavior.Button object at 0x0000000008c9dc70>
+
+ 10101203   36930       0       0 start render <renpy.display.behavior.Button object at 0x0000000008c9cdd0>
+
+ 10101203   36930       0       0 start render <renpy.text.text.Text object ('Sobre') at 0x0000000008c9d250>
+
+ 10101203   36930       0       0 end render <renpy.text.text.Text object ('Sobre') at 0x0000000008c9d250>
+
+ 10102201   37927     998       0 end render <renpy.display.behavior.Button object at 0x0000000008c9cdd0>
+
+ 10102201   37927       0       0 start render <renpy.display.behavior.Button object at 0x0000000008c9ddc0>
+
+ 10102201   37927       0       0 start render <renpy.text.text.Text object ('Ajuda') at 0x0000000008c9f6b0>
+
+ 10102201   37927       0       0 end render <renpy.text.text.Text object ('Ajuda') at 0x0000000008c9f6b0>
+
+ 10102201   37927       0       0 end render <renpy.display.behavior.Button object at 0x0000000008c9ddc0>
+
+ 10102201   37927       0       0 start render <renpy.display.behavior.Button object at 0x0000000008c9cf80>
+
+ 10102201   37927       0       0 start render <renpy.text.text.Text object ('Sair') at 0x0000000008c9e630>
+
+ 10103197   38924     997       0 end render <renpy.text.text.Text object ('Sair') at 0x0000000008c9e630>
+
+ 10103197   38924       0       0 end render <renpy.display.behavior.Button object at 0x0000000008c9cf80>
+
+ 10103197   38924       0       0 end render <renpy.display.layout.VBox object at 0x0000000008c9eab0>
+
+ 10103197   38924       0       0 start render <renpy.display.layout.VBox object at 0x0000000008c9fa40>
+
+ 10103197   38924       0       0 start render <renpy.text.text.Text object ('A Guiding Friend') at 0x0000000008c9dca0>
+
+ 10121943   57670   18746       0 end render <renpy.text.text.Text object ('A Guiding Friend') at 0x0000000008c9dca0>
+
+ 10121943   57670       0       0 start render <renpy.text.text.Text object ('0.0.1 - in dev') at 0x0000000008c9d8e0>
+
+ 10125340   61067    3397       0 end render <renpy.text.text.Text object ('0.0.1 - in dev') at 0x0000000008c9d8e0>
+
+ 10125340   61067       0       0 end render <renpy.display.layout.VBox object at 0x0000000008c9fa40>
+
+ 10125340   61067       0       0 end render <renpy.display.layout.Fixed object at 0x0000000008be4590>
+
+ 10125340   61067       0       0 end render <renpy.display.screen.ScreenDisplayable object (main_menu()) at 0x00000000066f6d20>
+
+ 10125340   61067       0       0 end render <renpy.display.layout.Fixed object at 0x0000000008be47a0>
+
+ 10125340   61067       0       0 start render <renpy.display.layout.Fixed object at 0x0000000008be6360>
+
+ 10126339   62066     999       0 end render <renpy.display.layout.Fixed object at 0x0000000008be6360>
+
+ 10126339   62066       0       0 end render <renpy.display.layout.Fixed object at 0x0000000008a71820>
+
+ 10126339   62066       0       0 start render <renpy.display.layout.Fixed object at 0x0000000008be6120>
+
+ 10126339   62066       0       0 end render <renpy.display.layout.Fixed object at 0x0000000008be6120>
+
+ 10126339   62066       0       0 end render <renpy.display.layout.Fixed object at 0x0000000008be4aa0>
+
+ 10126339   62066       0       0 start draw_screen
+
+ 10170826   44487       0       0 flip
+
+ 10172823       0       0       0 end frame
+
