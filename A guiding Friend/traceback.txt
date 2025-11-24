@@ -1,49 +1,35 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 22, in <module>
-    p(voice="sounds/falas/p1.wav") "{cps=20}...e lembrem-se, meus filhos. A mata tem seus mistérios. A Usina Velha, principalmente. Dizem os antigos que..."
-TypeError: ADVCharacter.__call__() missing 1 required positional argument: 'what'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "game/script.rpy", line 22, in script
-    p(voice="sounds/falas/p1.wav") "{cps=20}...e lembrem-se, meus filhos. A mata tem seus mistérios. A Usina Velha, principalmente. Dizem os antigos que..."
-Exception: Sayer 'p(voice="sounds/falas/p1.wav")' is not defined.
+  File "game/script.rpy", line 139, in script
+    if silencio != True then:
+  File "game/script.rpy", line 139
+    silencio != True then
+                     ^^^^
+SyntaxError: invalid syntax
 
 -- Full Traceback ------------------------------------------------------------
 
 Traceback (most recent call last):
-  File "renpy/ast.py", line 625, in eval_who
-    return renpy.python.py_eval(who)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^
-  File "renpy/python.py", line 1305, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
-  File "renpy/python.py", line 1298, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-           ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "game/script.rpy", line 22, in <module>
-    p(voice="sounds/falas/p1.wav") "{cps=20}...e lembrem-se, meus filhos. A mata tem seus mistérios. A Usina Velha, principalmente. Dizem os antigos que..."
-TypeError: ADVCharacter.__call__() missing 1 required positional argument: 'what'
+  File "game/script.rpy", line 139, in script
+    if silencio != True then:
+  File "renpy/ast.py", line 2079, in execute
+    if renpy.python.py_eval(condition):
+       ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^ 
+  File "renpy/python.py", line 1290, in py_eval
+    code = py_compile(code, "eval")
+           ~~~~~~~~~~^^^^^^^^^^^^^^
+  File "renpy/python.py", line 1247, in py_compile
+    raise e
+  File "renpy/python.py", line 1177, in py_compile
+    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, True)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "game/script.rpy", line 139
+    silencio != True then
+                     ^^^^
+SyntaxError: invalid syntax
 
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "game/script.rpy", line 22, in script
-    p(voice="sounds/falas/p1.wav") "{cps=20}...e lembrem-se, meus filhos. A mata tem seus mistérios. A Usina Velha, principalmente. Dizem os antigos que..."
-  File "renpy/ast.py", line 2923, in execute
-    Say.execute(self)
-    ~~~~~~~~~~~^^^^^^
-  File "renpy/ast.py", line 956, in execute
-    who = eval_who(self.who, self.who_fast)
-          ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "renpy/ast.py", line 627, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'p(voice="sounds/falas/p1.wav")' is not defined.
-
-Windows-10-10.0.19045-SP0 AMD64
-Ren'Py 8.5.0.25111603
-A Guiding Friend 0.0.1 - InDev
-Thu Nov 20 16:31:56 2025
+Windows-11-10.0.26100-SP0 AMD64
+Ren'Py 8.4.1.25072401
+A Guiding Friend 0.0.1 - in dev
+Mon Nov 24 10:28:56 2025

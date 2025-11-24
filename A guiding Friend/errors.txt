@@ -2,8 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 19: unterminated string literal
-    image tela_branca = "images/tela_branca.png
+File "game/script.rpy", line 109: expected statement.
+    silencio = True
+             ^
 
-Ren'Py Version: Ren'Py 8.5.0.25111603
-Thu Nov 20 17:59:37 2025
+Ren'Py Version: Ren'Py 8.4.1.25072401
+Mon Nov 24 10:24:21 2025
