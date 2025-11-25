@@ -1,35 +1,33 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 139, in script
-    if silencio != True then:
-  File "game/script.rpy", line 139
-    silencio != True then
-                     ^^^^
-SyntaxError: invalid syntax
+  File "game/script.rpy", line 172, in script
+    with fadein
+  File "game/script.rpy", line 172, in <module>
+    with fadein
+         ^^^^^^
+NameError: name 'fadein' is not defined. Did you mean: 'fade'?
 
 -- Full Traceback ------------------------------------------------------------
 
 Traceback (most recent call last):
-  File "game/script.rpy", line 139, in script
-    if silencio != True then:
-  File "renpy/ast.py", line 2079, in execute
-    if renpy.python.py_eval(condition):
-       ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^ 
-  File "renpy/python.py", line 1290, in py_eval
-    code = py_compile(code, "eval")
-           ~~~~~~~~~~^^^^^^^^^^^^^^
-  File "renpy/python.py", line 1247, in py_compile
-    raise e
-  File "renpy/python.py", line 1177, in py_compile
-    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, True)
-           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "game/script.rpy", line 139
-    silencio != True then
-                     ^^^^
-SyntaxError: invalid syntax
+  File "game/script.rpy", line 172, in script
+    with fadein
+  File "renpy/ast.py", line 1574, in execute
+    trans = renpy.python.py_eval(self.expr)
+            ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "renpy/python.py", line 1292, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/python.py", line 1285, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+           ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "game/script.rpy", line 172, in <module>
+    with fadein
+         ^^^^^^
+NameError: name 'fadein' is not defined. Did you mean: 'fade'?
 
 Windows-11-10.0.26100-SP0 AMD64
 Ren'Py 8.4.1.25072401
 A Guiding Friend 0.0.1 - in dev
-Mon Nov 24 10:28:56 2025
+Tue Nov 25 12:53:13 2025

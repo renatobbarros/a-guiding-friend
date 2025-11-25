@@ -13,7 +13,10 @@
     image tela_preta = "images/tela preta.jpg"
     image rua_clara = "images/rua_clara.PNG" 
     image rua_escura = "images/apagado.png"
+    image comadre = "images/comadre.png"
     image canavial_bifurcacao = "images/canavial_bifurcacao.png"
+    image usina = "images/usina.png"
+    image empilho = "images/empilho.png"
     image estrada_distante = "images/estrada_distante.png"
     image estrada_perto = "images/estrada_perto.png"
     image varanda_casa = "images/varanda_casa.png"
@@ -94,6 +97,9 @@ label cena_2_assobio:
     d "{cps=25}Oxente, mas olha só quem decidiu aparecer por aqui.."
     d "{cps=25}Você se perdeu, né? Que problemão."
 
+    jump cena_2_resposta
+
+label cena_2_resposta:
     menu: 
         "Responder a voz":
             c "{cps=25}Quem e você?"
@@ -101,33 +107,20 @@ label cena_2_assobio:
             d "{cps=25}Você nunca ouviu as historias? Eu sou alguem que você conhece muito bem."
 
             cf "{cps=25}A Comadre Florzinha."
-
-            $ silencio = False
+            show comadre at Transform(xpos=0.8, ypos=0.40, zoom=0.3)
+            with dissolve
         "Ficar em silêncio":
             "Você decide ficar em silencio, ignorando seja-la quem for\npara continuar procurando um caminho de volta para casa."
-            
             d "{cps=25}Pelo visto, o gato comeu sua lingua. Fica muito sem graça assim!"
-            d "{cps=25}Desse jeito então, eu não vou dizer quem eu sou."
-
-            $ silencio = True
+            d "{cps=25}Desse jeito então, você vai ficar ai sem ajuda nenhuma."
+            c "{cps=25}...(Eu vou ter que responder a ela se eu quero encontrar o caminho de volta.)"
+            jump cena_2_resposta
     
-    if silencio != True:
-        cf "{cps=25}Eu sou quem cuida de tudo isso aqui, sabia? E você caminhou para o lugar errado..\ndurante a noite, alias."
-        cf "{cps=25}Afinal, {i}ele{/i} não gosta de visitas inesperadas."
-
-        c "....!"
-
-        cf "{cps=25}Agora você ta realmente me escutando. Que tal eu te ajudar ir pra casa?\nEu vou te mostrar o caminho."
-
-        c "{cps=25}...Okay."
-    else: 
-        d "{cps=25}Eu sou quem cuida de tudo isso aqui, sabia? E você caminhou para o lugar errado.. \ndurante a noite, alias."
-        d "{cps=25}Afinal, {i}ele{/i} não gosta de visitas inesperadas."
-        c "....!"
-
-        d "{cps=25}Agora você ta realmente me escutando. Que tal eu te ajudar ir pra casa?\nEu vou te mostrar o caminho."
-
-        c "...{cps=25}Okay."
+    cf "{cps=25}Eu sou quem cuida de tudo isso aqui, sabia? E você caminhou para o lugar errado..\ndurante a noite, alias."
+    cf "{cps=25}Afinal, {i}ele{/i} não gosta de visitas inesperadas."
+    c "....!"
+    cf "{cps=25}Agora você ta realmente me escutando. Que tal eu te ajudar ir pra casa?\nEu vou te mostrar o caminho."
+    c "{cps=25}...Okay."
     
     jump cena_2_escolha
 
@@ -137,14 +130,9 @@ label cena_2_escolha:
             c "{cps=25}(Pelo visto, eu não tenho outra escolha...)"
             jump cena_3_canavial
         "Tentar achar outro caminho":
-            if silencio != True:
-                cf "{cps=25}Vai ficar ai que nem um poste esperando que alguem apareça pra te buscar?"
-                cf "{cps=25}Vem logo, {i}ele{/i} ja sabe que você ta aqui."
-                jump cena_2_escolha
-            else: 
-                d "{cps=25}Vai ficar ai que nem um poste esperando que alguem apareça pra te buscar?"
-                d "{cps=25}Vem logo, {i}ele{/i} ja sabe que você ta aqui."
-                jump cena_2_escolha
+            cf "{cps=25}Vai ficar ai que nem um poste esperando que alguem apareça pra te buscar?"
+            cf "{cps=25}Vem logo, {i}ele{/i} ja sabe que você ta aqui."
+            jump cena_2_escolha
 
 
 label cena_3_canavial:
@@ -154,7 +142,7 @@ label cena_3_canavial:
     
     voice "sounds/falas/c5.mp3"
     cf "{cps=20}(sussurrando) Shhh... cuidado onde pisa. Ele odeia barulho.\nVocê tá fazendo tanto barulho..."
-    
+
     voice "sounds/falas/c6.mp3"
     cf "{cps=30}Mais rápido! Por aqui!"
 
@@ -165,27 +153,67 @@ label cena_3_puzzle:
             
             voice "sounds/falas/c7.mp3"
             cf "{cps=25}(Rindo) Oxe, tá aperreado? É só seguir o assobio!"
-            
-            play sound "sounds/noises/passos_palha.wav"
+
+            stop sound 
             jump cena_3_puzzle 
-            
         "Seguir o som distante (Caminho Certo)":
             play sound "sounds/noises/passos_palha.wav"
             queue sound "sounds/noises/latido.wav"
             
             voice "sounds/falas/c8.mp3"
             cf "{cps=35}...Ei! Teimoso! O caminho não é esse! Você vai se arrepender.\nO Papa-Figo tá te esperando aí..."
-            
-            jump cena_5_final_estrada
 
+            jump cena_4_usina
+
+label cena_4_usina:
+    scene usina
+    with fade
+
+    "{cps=30}Seguindo o som distante, você chega em uma usina. \nPelo visto o jeito vai ser passar por ela."
+
+    cf "{cps=25}E ai, gostou? E aqui onde eu moro, sabe. Muitas outras pessoas moram aqui, tambem... incluindo {i}ele{/i}."
+    c "{cps=30}Como que eu faço pra atravessar então? Eu.. não quero ficar aqui."
+    cf "{cps=25}Oxi, nunca teve aquele espirito de explorar não? Talvez você encontre algo la."
+
+
+    scene tela_preta
+    with fade
+
+    play sound "sounds/noises/passos_palha.wav" loop
+    "{cps=30}Chegando mais perto da usina, você tenta encontrar um caminho pra sair daqui."
+    stop sound
+    
+    jump cena_4_escolha
+
+label cena_4_escolha:
+    menu:
+        "Tentar abrir a porta principal e entrar":
+            play sound "sounds/noises/porta.wav"
+            "{cps=30}Você tenta abrir a porta, batendo nela com toda força que você tem pra tentar abrir."
+            c "{cps=25}Trancado.. eu não vou conseguir entrar."
+            cf "{cps=25}Continua batendo ai, faz um barulhão pra tu ver.. Fica melhor pra ele te achar."
+            jump cena_4_escolha
+        "Se esconder em algum canto e esperar virar dia":
+            stop ambiente fadeout 2.0
+            c "{cps=25}(Tem um monte de coisas por ali... e se eu tentar me esconder la?)"
+            show empilho
+            "{cps=30}Você corre para tentar achar algum lugar para esconder nesse\nempilho de coisas velhas e enferrujadas."
+            cf "{cps=25}Vai ficar parado ai ate ele chegar aqui, ne? Você vai ser bem saboroso pra ele."
+            play sound "sounds/noises/windchime.mp3" volume 2.0
+            cf "{cps=25}...Ele chegou."
+            cf "{cps=25}Corre, agora!"
+            
+    scene tela_preta
+    "{cps=30}Ouvindo a voz, você começa a correr em uma direção aleatoria no meio da escuridão."
+    jump cena_5_final_estrada
 
 label cena_5_final_estrada:
-    stop ambiente fadeout 2.0
+    # stop ambiente fadeout 2.0
     
     scene estrada_distante
     with dissolve
     voice "sounds/falas/c15.mp3"
-    cf "{cps=20}...Ah. ...Você achou o caminho. Que chato."
+    cf "{cps=20}...Ah. ...Você achou o caminho de volta. Que chato."
     
     scene estrada_perto
     with dissolve
@@ -212,12 +240,9 @@ label cena_5_final_estrada:
             stop ambiente
             "FIM"
             return
-
         "Olhar para trás.":
             scene olhando_atras
             with dissolve
-        
             play sound "sounds/noises/assobio.wav"
-
             "FIM?"
             return
