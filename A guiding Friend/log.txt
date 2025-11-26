@@ -1,28 +1,79 @@
-2025-11-26 19:26:51 UTC
-Windows-11-10.0.26100-SP0
-Ren'Py 8.4.1.25072401
+2025-11-26 21:38:26 UTC
+Windows-10-10.0.19045-SP0
+Ren'Py 8.5.0.25111603
 
-Early init took 42 ms
-Loading error handling took 21 ms
-Loading script took 90 ms
-Loading save slot metadata took 26 ms
+Early init took 112 ms
+Loading error handling took 434 ms
+Loading script took 768 ms
+Loading save slot metadata took 462 ms
 Loading persistent took 0 ms
-Running init code took 37 ms
-Loading analysis data took 3 ms
-Analyze and compile ATL took 1 ms
-Reloading save slot metadata took 8 ms
-Dump and make backups took 34 ms
-Cleaning cache took 0 ms
-Making clean stores took 0 ms
-Initial gc took 32 ms
-DPI scale factor: 1.250000
+
+File "game/script.rpy", line 201: end of line expected.
+    show layer master with flash_susto
+                      ^
+DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 2 ms
-Init translation took 0 ms
+Interface start took 1124 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 620'
+Version: '4.6.0 - Build 27.20.100.8682'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1280, 720) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 27 ms
+Loading error handling took 62 ms
+Loading script took 376 ms
+Loading save slot metadata took 45 ms
+Loading persistent took 1 ms
+Running init code took 311 ms
+Loading analysis data took 7 ms
+Analyze and compile ATL took 1 ms
+Reloading save slot metadata took 345 ms
+Backing up script files to 'C:\\Users\\renat\\AppData\\Roaming/RenPy/backups\\A guiding Friend':
+Dump and make backups took 131 ms
+Cleaning cache took 1 ms
+Making clean stores took 0 ms
+Initial gc took 120 ms
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 5 ms
+Init translation took 1 ms
 Cleaning stores took 0 ms
-Load screen analysis took 15 ms
-Analyze screens took 1 ms
-Save screen analysis took 0 ms
-Save pyanalysis took 0 ms
-Save bytecode took 0 ms
+Load screen analysis took 3 ms
+Analyze screens took 31 ms
+Save screen analysis took 22 ms
+Save pyanalysis took 12 ms
+Save bytecode took 4 ms
+Running _start took 3 ms
+Interface start took 1170 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 620'
+Version: '4.6.0 - Build 27.20.100.8682'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1280, 720) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Cleaning stores took 4 ms
+Load screen analysis took 116 ms
+Analyze screens took 0 ms
+Running _start took 7 ms
+Cleaning stores took 3 ms
+Load screen analysis took 84 ms
+Analyze screens took 0 ms
+Running _start took 10 ms

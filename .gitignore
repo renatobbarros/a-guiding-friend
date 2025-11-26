@@ -1,0 +1,8 @@
+# RenPy
+game/saves/
+*.rpyc
+*.rpyb
+log.txt
+traceback.txt
+errors.txt
+tmp/

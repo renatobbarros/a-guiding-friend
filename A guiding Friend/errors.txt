@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 248: expected statement.
-    sh
-      ^
+File "game/script.rpy", line 201: end of line expected.
+    show layer master with flash_susto
+                      ^
 
-Ren'Py Version: Ren'Py 8.4.1.25072401
-Tue Nov 25 12:59:59 2025
+Ren'Py Version: Ren'Py 8.5.0.25111603
+Wed Nov 26 18:38:27 2025
