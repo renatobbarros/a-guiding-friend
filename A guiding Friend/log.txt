@@ -1,44 +1,28 @@
-2025-11-26 19:00:09 UTC
+2025-11-26 19:26:51 UTC
 Windows-11-10.0.26100-SP0
 Ren'Py 8.4.1.25072401
 
-Early init took 40 ms
-Loading error handling took 20 ms
-Loading script took 161 ms
-Loading save slot metadata took 20 ms
+Early init took 42 ms
+Loading error handling took 21 ms
+Loading script took 90 ms
+Loading save slot metadata took 26 ms
 Loading persistent took 0 ms
 Running init code took 37 ms
 Loading analysis data took 3 ms
 Analyze and compile ATL took 1 ms
-Reloading save slot metadata took 7 ms
-Backing up script files to 'C:\\Users\\isa\\AppData\\Roaming/RenPy/backups\\A guiding Friend':
-Dump and make backups took 32 ms
+Reloading save slot metadata took 8 ms
+Dump and make backups took 34 ms
 Cleaning cache took 0 ms
 Making clean stores took 0 ms
-Initial gc took 31 ms
+Initial gc took 32 ms
 DPI scale factor: 1.250000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object took 2 ms
 Init translation took 0 ms
 Cleaning stores took 0 ms
-Load screen analysis took 0 ms
-Analyze screens took 6 ms
-Save screen analysis took 9 ms
+Load screen analysis took 15 ms
+Analyze screens took 1 ms
+Save screen analysis took 0 ms
 Save pyanalysis took 0 ms
-Save bytecode took 20 ms
-Running _start took 1 ms
-Interface start took 215 ms
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) Iris(R) Xe Graphics'
-Version: '4.6.0 - Build 32.0.101.7080'
-Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
-Screen sizes: virtual=(1280, 720) physical=(1920, 991) drawable=(1920, 991)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1280, 720) physical=(1920, 991) drawable=(1920, 991)
-Maximum texture size: 4096x4096
+Save bytecode took 0 ms
