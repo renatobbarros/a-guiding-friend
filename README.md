@@ -1,5 +1,6 @@
 # a-guiding-friend
-> "ELe vem... e ele procura.. *figado*."
+> "Ele vem... e ele procura.. *figado*."
+
 Você e uma criança que se perdeu na regiao da Usina Salgada, Ipojuca. 
 Você quer apenas voltar para casa, mas ja esta muito tarde...
 Sera que vai conseguir?
