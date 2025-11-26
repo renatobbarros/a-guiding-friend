@@ -6,13 +6,13 @@ define gui.show_name = True
 
 ## A versão do jogo.
 
-define config.version = "0.0.1 - in dev"
+define config.version = "1.0.0 - Release"
 
 
 
 define gui.about = _p("""
 {b}A Guiding Friend{/b}
-Uma experiência de horror psicológico no interior de Pernambuco. Criado como avaliação da segunda V.A de Projetos interdiciplinares de sistemas da informação
+Uma experiência de horror psicológico no interior de Pernambuco. Criado como avaliação da segunda V.A de Principios de Programação.
 
 Criado por: {b}Isaque Lucas e Renato Barros{/b}
 Roteiro e Direção: {b}Isaque Lucas e Renato Barros{/b}

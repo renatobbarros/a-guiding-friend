@@ -94,7 +94,9 @@ label cena_2_assobio:
     play sound "sounds/noises/assobio.wav" fadein 0.5 volume 0.8
     with Pause(4.3)
 
+    voice "sounds/falas/oxente.wav"
     d "{cps=25}Oxente, mas olha só quem decidiu aparecer por aqui.."
+    voice "sounds/falas/perdeu.wav"
     d "{cps=25}Você se perdeu, né? Que problemão."
 
     jump cena_2_resposta
@@ -104,21 +106,28 @@ label cena_2_resposta:
         "Responder a voz":
             c "{cps=25}Quem e você?"
 
+            voice "sounds/falas/intro1.wav"
             d "{cps=25}Você nunca ouviu as historias? Eu sou alguem que você conhece muito bem."
 
+            voice "sounds/falas/intro2.wav"
             cf "{cps=25}A Comadre Florzinha."
             show comadre at Transform(xpos=0.8, ypos=0.40, zoom=0.3)
             with dissolve
         "Ficar em silêncio":
             "Você decide ficar em silencio, ignorando seja-la quem for\npara continuar procurando um caminho de volta para casa."
+            voice "sounds/falas/gato.wav"
             d "{cps=25}Pelo visto, o gato comeu sua lingua. Fica muito sem graça assim!"
+            voice "sounds/falas/sem_ajuda.wav"
             d "{cps=25}Desse jeito então, você vai ficar ai sem ajuda nenhuma."
             c "{cps=25}...(Eu vou ter que responder a ela se eu quero encontrar o caminho de volta.)"
             jump cena_2_resposta
     
+    voice "sounds/falas/cuida.wav"
     cf "{cps=25}Eu sou quem cuida de tudo isso aqui, sabia? E você caminhou para o lugar errado..\ndurante a noite, alias."
+    voice "sounds/falas/visitas.wav"
     cf "{cps=25}Afinal, {i}ele{/i} não gosta de visitas inesperadas."
     c "....!"
+    voice "sounds/falas/escutando.wav"
     cf "{cps=25}Agora você ta realmente me escutando. Que tal eu te ajudar ir pra casa?\nEu vou te mostrar o caminho."
     c "{cps=25}...Okay."
     
@@ -130,8 +139,8 @@ label cena_2_escolha:
             c "{cps=25}(Pelo visto, eu não tenho outra escolha...)"
             jump cena_3_canavial
         "Tentar achar outro caminho":
-            cf "{cps=25}Vai ficar ai que nem um poste esperando que alguem apareça pra te buscar?"
-            cf "{cps=25}Vem logo, {i}ele{/i} ja sabe que você ta aqui."
+            voice "sounds/falas/poste.wav"
+            cf "{cps=25}Vai ficar ai que nem um poste esperando que alguem apareça pra te buscar?\nVem logo, {i}ele{/i} ja sabe que você ta aqui."
             jump cena_2_escolha
 
 
@@ -148,7 +157,7 @@ label cena_3_canavial:
 
 label cena_3_puzzle:
     menu:
-        "Seguir a luz (Caminho da Comadre)":
+        "Seguir a luz":
             play sound "sounds/noises/passos_palha.wav"
             
             voice "sounds/falas/c7.mp3"
@@ -156,7 +165,7 @@ label cena_3_puzzle:
 
             stop sound 
             jump cena_3_puzzle 
-        "Seguir o som distante (Caminho Certo)":
+        "Seguir o som distante":
             play sound "sounds/noises/passos_palha.wav"
             queue sound "sounds/noises/latido.wav"
             
@@ -171,8 +180,10 @@ label cena_4_usina:
 
     "{cps=30}Seguindo o som distante, você chega em uma usina. \nPelo visto o jeito vai ser passar por ela."
 
-    cf "{cps=25}E ai, gostou? E aqui onde eu moro, sabe. Muitas outras pessoas moram aqui, tambem... incluindo {i}ele{/i}."
+    voice "sounds/falas/mora.wav"
+    cf "{cps=25}E ai, gostou? E aqui onde eu moro, sabe. Muitas outras pessoas moram aqui tambem... incluindo {i}ele{/i}."
     c "{cps=30}Como que eu faço pra atravessar então? Eu.. não quero ficar aqui."
+    voice "sounds/falas/explorar.wav"
     cf "{cps=25}Oxi, nunca teve aquele espirito de explorar não? Talvez você encontre algo la."
 
 
@@ -191,6 +202,7 @@ label cena_4_escolha:
             play sound "sounds/noises/porta.wav"
             "{cps=30}Você tenta abrir a porta, batendo nela com toda força que você tem pra tentar abrir."
             c "{cps=25}Trancado.. eu não vou conseguir entrar."
+            voice "sounds/falas/barulhao.wav"
             cf "{cps=25}Continua batendo ai, faz um barulhão pra tu ver.. Fica melhor pra ele te achar."
             jump cena_4_escolha
         "Se esconder em algum canto e esperar virar dia":
@@ -198,7 +210,7 @@ label cena_4_escolha:
             c "{cps=25}(Tem um monte de coisas por ali... e se eu tentar me esconder la?)"
             show empilho
             "{cps=30}Você corre para tentar achar algum lugar para esconder nesse\nempilho de coisas velhas e enferrujadas."
-            cf "{cps=25}Vai ficar parado ai ate ele chegar aqui, ne? Você vai ser bem saboroso pra ele."
+            cf "{cps=25}Vai ficar parado ai ate ele chegar aqui, ne? Você vai ser bem saboroso pra ele te devorar."
             play sound "sounds/noises/windchime.mp3" volume 2.0
             cf "{cps=25}...Ele chegou."
             cf "{cps=25}Corre, agora!"
@@ -231,7 +243,7 @@ label cena_5_final_estrada:
     cf "{cps=10}...Até logo, figuinho."
 
     menu:
-        "Entrar em casa correndo.":
+        "Entrar em casa correndo":
             c "{nw}Mãe!"
             scene tela_branca
             with fade
@@ -240,9 +252,9 @@ label cena_5_final_estrada:
             stop ambiente
             "FIM"
             return
-        "Olhar para trás.":
+        "Olhar para trás":
             scene olhando_atras
             with dissolve
             play sound "sounds/noises/assobio.wav"
             "FIM?"
-            return
+            return 

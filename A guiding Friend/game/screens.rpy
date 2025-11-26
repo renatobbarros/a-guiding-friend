@@ -307,7 +307,7 @@ screen navigation():
 
             textbutton _("Salvar") action ShowMenu("save")
 
-        textbutton _("Carga") action ShowMenu("load")
+        textbutton _("Carregar Save") action ShowMenu("load")
 
         textbutton _("Preferências") action ShowMenu("preferences")
 
@@ -355,7 +355,7 @@ screen main_menu():
     ## Isso garante que qualquer outra tela de menu seja substituída.
     tag menu
 
-    add gui.main_menu_background
+    add gui.main_menu_background xalign 1.0 zoom 0.9
 
     ## Esse quadro vazio escurece o menu principal.
     frame:
@@ -596,7 +596,7 @@ screen load():
 
     tag menu
 
-    use file_slots(_("Carga"))
+    use file_slots(_("Saves"))
 
 
 screen file_slots(title):
