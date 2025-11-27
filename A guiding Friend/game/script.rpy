@@ -24,6 +24,7 @@
     image olhando_atras = "images/olhando_atras.png"
     image papa_figo_jumpscare = "images/papa_figo_jumpscare.png"
     image oferenda_cerca = "images/oferenda_cerca.png"
+    image tela_branca = "images/tela_branca.jpg"
 label start:
     play music "sounds/music/Ossuary 6 - Air.mp3" fadein 2.0
 
@@ -54,7 +55,7 @@ label start:
     p "{cps=25}É um ensinamento sobre respeito à natureza e os mistérios que ela abriga.{w=0.4}\nVamos discutir juntos o que essa lenda nos ensina sobre coragem e proteção!"
     
     with Pause(1.5)
-    
+    voice "sounds/falas/p7.mp3"
     p "{cps=15}...ele vem. O Homem do Saco, o Velho. O Papa-Figo. Ele procura...{w=1.5} {i}fígado{/i}."
 
     scene tela_preta
@@ -126,7 +127,7 @@ label cena_2_resposta:
     
     voice "sounds/falas/cuida.wav"
     cf "{cps=25}Eu sou quem cuida de tudo isso aqui, sabia? E você caminhou para o lugar errado..\ndurante a noite, alias."
-    voice "sounds/falas/visitas.wav"
+    voice "sounds/falas/visitas.mp3"
     cf "{cps=25}Afinal, {i}ele{/i} não gosta de visitas inesperadas."
     c "....!"
     voice "sounds/falas/escutando.wav"
@@ -178,7 +179,6 @@ label cena_3_puzzle:
             
         "Seguir o som distante":
             play sound "sounds/noises/passos_palha.wav"
-            queue sound "sounds/noises/latido.wav"
             
             voice "sounds/falas/c8.mp3"
             cf "{cps=35}...Ei! Teimoso! O caminho não é esse! Você vai se arrepender..."
@@ -295,13 +295,13 @@ label cena_5_final_estrada:
             stop music fadeout 2.0
             stop ambiente fadeout 2.0
             
-            c "{cps=20}(Pensamento) Minha avó dizia... que ela é vaidosa. Que ela gosta de agrados."
+            c "{cps=20}Minha avó dizia... que ela é vaidosa. Que ela gosta de agrados."
             "Você para no portão de casa. Em vez de entrar, você tira um doce do bolso e coloca sobre a cerca de madeira."
             
-            play sound "sounds/noises/vento_canavial.wav" fadein 2.0
+            play sound "sounds/noises/vento_canavial.mp3" fadein 2.0
             jump final_oferenda_cena5
 label final_oferenda_cena5:
-    scene oferenda_cerca
+    scene oferenda_cerca at Transform(zoom=0.6)
     with dissolve
     
     "O vento para de repente. O silêncio é total."
@@ -310,7 +310,7 @@ label final_oferenda_cena5:
     
     with Pause(1.5)
     
-    voice "sounds/falas/c_oferenda_5.mp3"
+    voice "sounds/falas/c_oferenda_1.mp3"
     cf "{cps=20}Oxe... Tu lembrou de mim? Tu deixou um docinho?"
     
     play music "sounds/music/folclore_magico.wav" fadein 3.0
@@ -318,16 +318,16 @@ label final_oferenda_cena5:
     scene olhando_atras
     with dissolve
     
-    voice "sounds/falas/c_oferenda_6.mp3"
+    voice "sounds/falas/c_oferenda_2.mp3"
     cf "{cps=25}Ninguém nunca deixa nada... Todo mundo só corre. Só tu que não."
     
     "Você vê a porta da sua casa aberta. A luz quente. Sua mãe te esperando."
     "Mas a escuridão da estrada parece... mais acolhedora agora."
     
-    voice "sounds/falas/c_oferenda_7.mp3"
+    voice "sounds/falas/c_oferenda_3.mp3"
     cf "{cps=20}Não entra lá não, figuinho. Lá dentro o tempo passa. Tu vai crescer, vai ficar chato..."
     
-    voice "sounds/falas/c_oferenda_8.mp3"
+    voice "sounds/falas/c_oferenda_4.mp3"
     cf "{cps=20}Vem comigo. Eu sei onde tem mel. Eu sei onde o rio nasce. A gente brinca pra sempre."
     
     scene tela_preta

@@ -6,7 +6,7 @@ define gui.show_name = True
 
 ## A versão do jogo.
 
-define config.version = "1.0.0 - Release"
+define config.version = "1.0 - Release"
 
 
 
@@ -26,6 +26,7 @@ Agradecimentos Especiais:
 """)
 
 define build.name = "AGuidingFriend"
+define build.directory_name = "AGuidingFriend-1.0"
 
 define config.has_sound = True
 define config.has_music = True
