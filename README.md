@@ -1,40 +1,74 @@
-# a-guiding-friend
-> "Ele vem... e ele procura.. *figado*."
+# A Guiding Friend
 
-Você e uma criança que se perdeu na regiao da Usina Salgada, Ipojuca. 
-Você quer apenas voltar para casa, mas ja esta muito tarde...
-Sera que vai conseguir?
+> *"Ele vem... e ele procura... fígado."*
 
-## Sobre o Projeto
-Com o projeto sendo criado para a materia de Principios de Programação, o jogo e curto e rapido, mas charmoso, simples e marcante. Com uma historia inspirada nas lendas flocloricas da região, A Guiding Friend te leva em uma curta historia sobre uma criança perdida que deseja ir para casa. 
+**Você é uma criança perdida na região da Usina Salgada, em Ipojuca.**
+Você só quer voltar para casa, mas já está muito tarde. E quando a luz do poste apaga, a escuridão da mata revela que você não está sozinho.
 
-Inspirado em outros jogos similares, A Guiding Friend utiliza os conceitos de horror e pequena exploração para puxar a atenção do jogador, utilizando o sistema do [Ren'Py](https://www.renpy.org/) para conter tudo isso.
+---
 
-## Como instalar e executar o jogo:
-(Ainda vai ser elaborado..)
+## 📖 Sobre o Projeto
+
+**A Guiding Friend** é uma experiência curta de horror psicológico e exploração narrativa. Desenvolvido como projeto final para a disciplina de **Princípios de Programação** da **UFRPE**, o jogo busca resgatar e reinterpretar o folclore pernambucano em uma atmosfera tensa e imersiva.
+
+Inspirado na estética *found footage* e em jogos de terror focados em áudio, o projeto utiliza a engine **Ren'Py** para criar uma narrativa onde nem tudo é o que parece.
+
+## 🕯️ Enredo e Atmosfera
+
+A história começa com uma memória distante de uma aula sobre lendas locais. O que parecia apenas uma história para assustar crianças se torna real quando a infraestrutura precária da região falha e a iluminação pública se apaga.
+
+Sozinho no escuro, sua única companhia é uma voz: a **Comadre Florzinha**. Ela atua como sua guia e narradora. Mas cuidado: no folclore, ela é conhecida por ser traiçoeira.
+* Ela está te ajudando a voltar para casa?
+* Ou ela está te guiando para os braços do **Papa-Figo**?
+
+O jogo aposta no **medo do desconhecido**. Não há combate, apenas a tensão da escolha e a necessidade de interpretar os sons ao seu redor para sobreviver.
+
+## ✨ Destaques
+
+* **Narrador Não-Confiável:** A Comadre Florzinha descreve o mundo para você, mas suas intenções são misteriosas.
+* **Foco em Áudio:** Puzzles sonoros onde você deve ignorar o que vê e confiar no que ouve.
+* **Estética Found Footage:** Visuais realistas com granulação noturna, simulando a perspectiva de uma criança.
+* **Múltiplos Finais:** Suas escolhas (e sua gentileza) definem seu destino.
+* **Folclore Nordestino:** Uma homenagem às lendas da Usina Velha, Papa-Figo e Comadre Florzinha.
+
+---
+
+## 🎮 Como Jogar
+
+### Download e Instalação
+
+O jogo está disponível para **Windows** e **Mac**.
+
+1.  Acesse o link oficial do Google Drive: [**Baixar A Guiding Friend**](https://drive.google.com/drive/folders/1OYCYc1Y-q1ICGhMz11r529p5VfotyAaQ?usp=drive_link).
+2.  Faça o download do arquivo `.zip` correspondente ao seu sistema operacional.
+3.  Extraia o arquivo `.zip` para uma pasta de sua preferência.
+4.  Execute o arquivo `AGuidingFriend.exe` (Windows) ou o aplicativo (Mac).
+
+### Pré-requisitos de Sistema
+
+O jogo é leve e roda na maioria dos computadores modernos.
+
+* **SO:** Windows 10/11 ou macOS.
+* **Hardware:** Computador com menos de 10 anos de uso.
+* **Gráficos:** Compatibilidade com OpenGL 2, DirectX 9, OpenGL ES 2 ou WebGL.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+* **Engine:** [Ren'Py Visual Novel Engine](https://www.renpy.org/) (Python)
+* **Áudio:** Capcut (Vozes IA), Freesound.org, Incompetech.
+* **Arte:** Geração via IA com pós-processamento para estética *noise/grain*.
+
+---
 
 ## 👥 Autores
 
-Este projeto foi desenvolvido por:
+Este projeto foi desenvolvido com carinho (e alguns sustos) por:
 
-* **[Renato Barros]** - [@renatobbarros](https://github.com/renatobbarros)
-* **[Isaque Lucas]** - [@BlairFruit](https://github.com/BlairFruit)
+* **Renato Barros** - [@renatobbarros](https://github.com/renatobbarros)
+* **Isaque Lucas** - [@BlairFruit](https://github.com/BlairFruit)
 
-# Conceito Original
-A historia começa com uma memoria via texto que o protagonista lembra do professor que contou sobre a cultura folclorica de Pernambuco, com um sentimento de medo ja que esta sozinha no escuro. 
+---
 
-"Você abre os olhos. Mas esta muito, muito escuro. Ja é tarde. As outras crianças ja voltaram para a casa, mas seus pais não vieram te buscar.
-Você se lembra da historia do Papa-Figo que o professor te contou.
-(Elaboração). "
-
-O protagonista, uma criança com uma imaginação forte, agora tem que voltar para casa sozinho(a). Na volta de casa, pelo fato de que a região tem uma grande falta de infraestrutura, a iluminação publica da rua se apaga, e agora o protagonista se desespera, sem ideia de onde ir, tem que encontrar um novo caminho para retornar para o seu lar.
-
-A guia, a comadre-florzinha, sera a visão narrativa do jogo. Essencialmente, tudo vai ser "descrito" pela comadre-florzinha. Mas não e algo 100% confiavel, ja que a mesma gosta de ser traçoeira-etc.
-O jogo não tem nenhum "monstro", apenas utilizando a ambiencia e tensão para te assustar e deixar com medo, mas nunca realmente te "inflinge". :]
-
-### Pré-requisitos:
-- Sistema Operacional Windows (Preferencialmente, o 10 ou acima)
-(Talvez seja possivel que eu crie compatibilidade para o mac e linux, mas so quando tu terminar a função extra la, Renato)
-- Um computador que não seja mais velho do que 10 anos ou acima
-- Compatiblidade com OpenGL 2, DirectX 9, OpenGL ES 2, ou WebGL
-
+*"Não entra lá não, figuinho. Lá dentro o tempo passa..."*
