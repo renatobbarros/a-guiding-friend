@@ -2,6 +2,8 @@
 
 > *"Ele vem... e ele procura... fígado."*
 
+![jogo](./source/jogo.png)
+
 **Você é uma criança perdida na região da Usina Salgada, em Ipojuca.**
 Você só quer voltar para casa, mas já está muito tarde. E quando a luz do poste apaga, a escuridão da mata revela que você não está sozinho.
 
@@ -14,6 +16,8 @@ Você só quer voltar para casa, mas já está muito tarde. E quando a luz do po
 Inspirado na estética *found footage* e em jogos de terror focados em áudio, o projeto utiliza a engine **Ren'Py** para criar uma narrativa onde nem tudo é o que parece.
 
 ## 🕯️ Enredo e Atmosfera
+
+![figado](./source/figado.png)
 
 A história começa com uma memória distante de uma aula sobre lendas locais. O que parecia apenas uma história para assustar crianças se torna real quando a infraestrutura precária da região falha e a iluminação pública se apaga.
 
